@@ -55,13 +55,13 @@
             this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
             this.Direita = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -126,7 +126,7 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(27, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(26, 6);
             // 
             // Abrir
             // 
@@ -134,14 +134,14 @@
             this.Abrir.Image = ((System.Drawing.Image)(resources.GetObject("Abrir.Image")));
             this.Abrir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Abrir.Name = "Abrir";
-            this.Abrir.Size = new System.Drawing.Size(27, 24);
+            this.Abrir.Size = new System.Drawing.Size(26, 24);
             this.Abrir.Text = "btn_abrir";
             this.Abrir.Click += new System.EventHandler(this.Abrir_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(27, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(26, 6);
             // 
             // Salvar
             // 
@@ -149,14 +149,14 @@
             this.Salvar.Image = ((System.Drawing.Image)(resources.GetObject("Salvar.Image")));
             this.Salvar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Salvar.Name = "Salvar";
-            this.Salvar.Size = new System.Drawing.Size(27, 24);
+            this.Salvar.Size = new System.Drawing.Size(26, 24);
             this.Salvar.Text = "btn_salvar";
             this.Salvar.Click += new System.EventHandler(this.Salvar_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(27, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(26, 6);
             // 
             // Copiar
             // 
@@ -164,14 +164,14 @@
             this.Copiar.Image = ((System.Drawing.Image)(resources.GetObject("Copiar.Image")));
             this.Copiar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Copiar.Name = "Copiar";
-            this.Copiar.Size = new System.Drawing.Size(27, 24);
+            this.Copiar.Size = new System.Drawing.Size(26, 24);
             this.Copiar.Text = "btn_copiar";
             this.Copiar.Click += new System.EventHandler(this.Copiar_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(27, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(26, 6);
             // 
             // Colar
             // 
@@ -179,14 +179,14 @@
             this.Colar.Image = ((System.Drawing.Image)(resources.GetObject("Colar.Image")));
             this.Colar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Colar.Name = "Colar";
-            this.Colar.Size = new System.Drawing.Size(27, 24);
+            this.Colar.Size = new System.Drawing.Size(26, 24);
             this.Colar.Text = "btn_colar";
             this.Colar.Click += new System.EventHandler(this.Colar_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(27, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(26, 6);
             // 
             // Negrito
             // 
@@ -194,14 +194,14 @@
             this.Negrito.Image = ((System.Drawing.Image)(resources.GetObject("Negrito.Image")));
             this.Negrito.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Negrito.Name = "Negrito";
-            this.Negrito.Size = new System.Drawing.Size(27, 24);
+            this.Negrito.Size = new System.Drawing.Size(26, 24);
             this.Negrito.Text = "btn_negrito";
             this.Negrito.Click += new System.EventHandler(this.Negrito_Click);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(27, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(26, 6);
             // 
             // Italico
             // 
@@ -209,14 +209,14 @@
             this.Italico.Image = ((System.Drawing.Image)(resources.GetObject("Italico.Image")));
             this.Italico.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Italico.Name = "Italico";
-            this.Italico.Size = new System.Drawing.Size(27, 24);
+            this.Italico.Size = new System.Drawing.Size(26, 24);
             this.Italico.Text = "btn_italico";
             this.Italico.Click += new System.EventHandler(this.Italico_Click);
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(27, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(26, 6);
             // 
             // Sublinhado
             // 
@@ -224,14 +224,14 @@
             this.Sublinhado.Image = ((System.Drawing.Image)(resources.GetObject("Sublinhado.Image")));
             this.Sublinhado.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Sublinhado.Name = "Sublinhado";
-            this.Sublinhado.Size = new System.Drawing.Size(27, 24);
+            this.Sublinhado.Size = new System.Drawing.Size(26, 24);
             this.Sublinhado.Text = "btn_sublinhado";
             this.Sublinhado.Click += new System.EventHandler(this.Sublinhado_Click);
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(27, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(26, 6);
             // 
             // Justificado
             // 
@@ -239,13 +239,13 @@
             this.Justificado.Image = ((System.Drawing.Image)(resources.GetObject("Justificado.Image")));
             this.Justificado.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Justificado.Name = "Justificado";
-            this.Justificado.Size = new System.Drawing.Size(27, 24);
+            this.Justificado.Size = new System.Drawing.Size(26, 24);
             this.Justificado.Text = "btn_justificado";
             // 
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(27, 6);
+            this.toolStripSeparator9.Size = new System.Drawing.Size(26, 6);
             // 
             // Centralizado
             // 
@@ -253,13 +253,13 @@
             this.Centralizado.Image = ((System.Drawing.Image)(resources.GetObject("Centralizado.Image")));
             this.Centralizado.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Centralizado.Name = "Centralizado";
-            this.Centralizado.Size = new System.Drawing.Size(27, 24);
+            this.Centralizado.Size = new System.Drawing.Size(26, 24);
             this.Centralizado.Text = "btn_centralizado";
             // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(27, 6);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(26, 6);
             // 
             // Esquerda
             // 
@@ -267,13 +267,13 @@
             this.Esquerda.Image = ((System.Drawing.Image)(resources.GetObject("Esquerda.Image")));
             this.Esquerda.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Esquerda.Name = "Esquerda";
-            this.Esquerda.Size = new System.Drawing.Size(27, 24);
+            this.Esquerda.Size = new System.Drawing.Size(26, 24);
             this.Esquerda.Text = "btn_esquerda";
             // 
             // toolStripSeparator11
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(27, 6);
+            this.toolStripSeparator11.Size = new System.Drawing.Size(26, 6);
             // 
             // Direita
             // 
@@ -281,7 +281,7 @@
             this.Direita.Image = ((System.Drawing.Image)(resources.GetObject("Direita.Image")));
             this.Direita.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Direita.Name = "Direita";
-            this.Direita.Size = new System.Drawing.Size(27, 24);
+            this.Direita.Size = new System.Drawing.Size(26, 24);
             this.Direita.Text = "btn_direita";
             // 
             // panel1
@@ -292,6 +292,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1055, 110);
             this.panel1.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(490, 36);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(127, 62);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Salvar";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // openFileDialog1
             // 
@@ -314,18 +326,6 @@
             this.panel2.Size = new System.Drawing.Size(1003, 556);
             this.panel2.TabIndex = 4;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(490, 36);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 62);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Salvar";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -339,6 +339,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Editor de Texto";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);

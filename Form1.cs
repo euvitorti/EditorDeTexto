@@ -143,19 +143,50 @@ namespace EditorDeTexto
         {
             string NomeFonte = null;
             float TamanhoFonte = 0;
-            bool Negrito = false;
+            bool Negrito, italico, sublinhado = false;
             
             NomeFonte = richTextBox1.Font.Name;
             TamanhoFonte = richTextBox1.Font.Size;
-            Negrito = richTextBox1.Font.Bold;
+            Negrito = richTextBox1.SelectionFont.Bold;
+            italico = richTextBox1.SelectionFont.Italic;
+            sublinhado = richTextBox1.SelectionFont.Underline;
+
+            richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Regular);
 
             if (Negrito == false)
             {
-                richTextBox1.SelectionFont = new  Font(NomeFonte, TamanhoFonte, FontStyle.Bold);
+                if(italico == true & sublinhado == true)
+                {
+                    richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline);
+                }
+                else if (italico == true & sublinhado == false)
+                {
+                    richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Bold | FontStyle.Italic);
+                }
+                else if (italico == false & sublinhado == true)
+                {
+                    richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Bold | FontStyle.Underline);
+                }
+                else if (italico == false & sublinhado == false)
+                {
+                    richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Bold);
+                }
+
             }
             else
             {
-                richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Regular);
+                if (italico == true & sublinhado == true)
+                {
+                    richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Italic | FontStyle.Underline);
+                }
+                else if (italico == true & sublinhado == false)
+                {
+                    richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Italic);
+                }
+                else if (italico == false & sublinhado == true)
+                {
+                    richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Underline);
+                }
             }
         }
 
@@ -168,19 +199,49 @@ namespace EditorDeTexto
         {
             string NomeFonte = null;
             float TamanhoFonte = 0;
-            bool Italico = false;
+            bool Negrito, italico, sublinhado = false;
 
             NomeFonte = richTextBox1.Font.Name;
             TamanhoFonte = richTextBox1.Font.Size;
-            Italico = richTextBox1.Font.Italic;
+            Negrito = richTextBox1.SelectionFont.Bold;
+            italico = richTextBox1.SelectionFont.Italic;
+            sublinhado = richTextBox1.SelectionFont.Underline;
 
-            if (Italico == false)
+            richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Regular);
+
+            if (italico == false)
             {
-                richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Italic);
+                if (Negrito == true & sublinhado == true)
+                {
+                    richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline);
+                }
+                else if (Negrito == true & sublinhado == false)
+                {
+                    richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Bold | FontStyle.Italic);
+                }
+                else if (Negrito == false & sublinhado == true)
+                {
+                    richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Italic | FontStyle.Underline);
+                }
+                else if (Negrito == false & sublinhado == false)
+                {
+                    richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Italic);
+                }
             }
             else
             {
-                richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Italic);
+                if (Negrito == true & sublinhado == true)
+                {
+                    richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Bold | FontStyle.Underline);
+                }
+                else if (Negrito == true & sublinhado == false)
+                {
+                    richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Bold);
+                }
+                else if (Negrito == false & sublinhado == true)
+                {
+                    richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Underline);
+                }
             }
         }
 
@@ -193,21 +254,52 @@ namespace EditorDeTexto
         {
             string NomeFonte = null;
             float TamanhoFonte = 0;
-            bool Sublinhado = false;
+            bool Negrito, italico, sublinhado = false;
 
             NomeFonte = richTextBox1.Font.Name;
             TamanhoFonte = richTextBox1.Font.Size;
-            Sublinhado = richTextBox1.Font.Underline;
+            Negrito = richTextBox1.SelectionFont.Bold;
+            italico = richTextBox1.SelectionFont.Italic;
+            sublinhado = richTextBox1.SelectionFont.Underline;
 
-            if (Sublinhado == false)
+            richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Regular);
+
+            if (sublinhado == false)
             {
-                richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Underline);
+                if (Negrito == true & italico == true)
+                {
+                    richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline);
+                }
+                else if (Negrito == true & italico == false)
+                {
+                    richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Bold | FontStyle.Underline);
+                }
+                else if (Negrito == false & italico == true)
+                {
+                    richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Italic | FontStyle.Underline);
+                }
+                else if (Negrito == false & italico == false)
+                {
+                    richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Underline);
+                }
             }
             else
             {
-                richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Underline);
+                if (Negrito == true & italico == true)
+                {
+                    richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Bold | FontStyle.Italic);
+                }
+                else if (Negrito == true & italico == false)
+                {
+                    richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Bold);
+                }
+                else if (Negrito == false & italico == true)
+                {
+                    richTextBox1.SelectionFont = new Font(NomeFonte, TamanhoFonte, FontStyle.Italic);
+                }
             }
         }
+ 
 
         private void Sublinhado_Click(object sender, EventArgs e)
         {
@@ -215,6 +307,11 @@ namespace EditorDeTexto
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
