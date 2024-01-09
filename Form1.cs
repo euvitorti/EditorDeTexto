@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Windows.Forms.VisualStyles;
 
 namespace EditorDeTexto
 {
@@ -304,6 +305,38 @@ namespace EditorDeTexto
         private void Sublinhado_Click(object sender, EventArgs e)
         {
             ArquivoSublinhado();
+        }
+
+        // ALINHAMENTO DO TEXTO
+
+        private void AlinharTextoEsquerda()
+        {
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Left;
+        }
+
+        private void Esquerda_Click(object sender, EventArgs e)
+        {
+            AlinharTextoEsquerda();
+        }
+        
+        private void AlinharTextoDireita()
+        {
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Right;
+        }
+
+        private void Direita_Click(object sender, EventArgs e)
+        {
+            AlinharTextoDireita();
+        }
+        
+        private void AlinharTextoCentro()
+        {
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Center;
+        }
+        
+        private void Centralizado_Click(object sender, EventArgs e)
+        {
+            AlinharTextoCentro();
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
