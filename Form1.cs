@@ -15,8 +15,6 @@ namespace EditorDeTexto
     public partial class Form1 : Form
     {
 
-        StreamReader leitura = null;
-
         public Form1()
         {
             InitializeComponent();
@@ -337,6 +335,50 @@ namespace EditorDeTexto
         private void Centralizado_Click(object sender, EventArgs e)
         {
             AlinharTextoCentro();
+        }
+
+
+        StringReader leitura = null;
+        // IMPRESSÃO DO TEXTO
+        private void Imprimir()
+        {
+            printDialog1.Document = printDocument1;
+
+            // TRAZENDO O TEXTO DA CAIXA DE TEXTO PARA A VARIAVEL
+            string imprimirTexto = this.richTextBox1.Text;
+            leitura = new StringReader(imprimirTexto);
+
+            if (printDialog1.ShowDialog() == DialogResult.OK)
+            {
+                this.printDocument1.Print();
+            }
+        }
+
+        // ROTINA DE IMPRESSÃO
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            float linhaPagina = 0;
+            float posicaoY = 0;
+            int contador = 0;
+
+            // MARGEM
+            float margemEsquerda = e.MarginBounds.Left - 50;
+            float margemSuperior = e.MarginBounds.Top - 50;
+
+            if (margemEsquerda < 5)
+            {
+                margemEsquerda = 20;
+            }
+
+            if (margemSuperior < 5)
+            {
+                margemSuperior = 20;
+            }
+
+            string linha = null;
+            // PASSANDO A INFORMAÇÃO DA FONTE E DA COR
+            Font font = this.richTextBox1.Font;
+            SolidBrush pincel = new SolidBrush(Color.Black);
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
