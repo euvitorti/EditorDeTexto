@@ -149,16 +149,6 @@
         IgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="Salvar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADcSURBVEhL7ZW7DcIwFEXdAFuECZgEJoEBENBQ0rAJCBoK
-        PpMwCIIK7rH8GivBSUgTlCMdyZ9wbyLZwnW0hol8yneQ8Vg2xjpoxPOf6QqStLNgJufBq4wLWLP9qazM
-        Xj7kVm7kSBqMWWOPZ3i2kKG8yZfkEt0l9ORBnuSAhYi8fX5LBll8YSZ9+EL2mUQUlaTKyVrKCxPa8sKN
-        OCwVbrBHtv+kFLzAURKMjL+9lOGzyxQAgbtgmXCoVFCHPylInaK6cIr4Y/IXgjPbZAlZK+nvATeZgd3k
-        JiTr7JzLPl80WAvB0XapAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="Copiar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -247,6 +237,17 @@
         ggbuY+miD2eEISVJ6QncV5tI145G6wAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="impressao.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEQSURBVEhLxdWxasJQGMXxO9S9fYMO9gnarh3qIFjo5mKX
+        FsFXKD5DF/UFfAUFJ+0juLlpWxAd1aG0g5P+j8mFQKxJ7E088IMbyPm+EAIxp0odc6xi0r2viJUrrFHC
+        dUy6V508InOHqXdMFHXUjUwqC85w4XvALHAdlzrq2mvN3OUFv9g49oNnmCUqCD6NC09YYLftUgfH0UzN
+        drqghaJ3TGdBG4/eMZ0FwWS/IAd9srV/0qepWaEF5+hCn9YHBgmpo24HmhVaYPOOqndMFHXUtcluwQQN
+        lH0jHLtAXTuniTHMLfQOh75vHLtAXTunjxuE4uoV/ZnUF/Twhn2/xkPUUTcyBXxh38/9kE/cI8sYswWE
+        lYe+/WVsIQAAAABJRU5ErkJggg==
+</value>
+  </data>
   <metadata name="fontDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>279, 17</value>
   </metadata>
@@ -261,5 +262,8 @@
   </metadata>
   <metadata name="printDocument1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>898, 17</value>
+  </metadata>
+  <metadata name="colorDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 58</value>
   </metadata>
 </root>

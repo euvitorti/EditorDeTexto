@@ -63,11 +63,10 @@ namespace EditorDeTexto
         }
 
         //BOTÃO SALVAR
-        private void Salvar_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             SalvarArquivo();
         }
-
 
         //FUNÇÃO ABRIR AERQUIVO
         private void AbrirArquivo()
@@ -377,10 +376,37 @@ namespace EditorDeTexto
 
             string linha = null;
             // PASSANDO A INFORMAÇÃO DA FONTE E DA COR
-            Font font = this.richTextBox1.Font;
+            Font fonte = this.richTextBox1.Font;
             SolidBrush pincel = new SolidBrush(Color.Black);
+            //PARA CONTAR QUANTAS LINHAS POR PÁGINA
+            linhaPagina = e.MarginBounds.Height / fonte.GetHeight(e.Graphics);
+            linha = leitura.ReadLine();
+
+            while (contador < linhaPagina)
+            {
+                posicaoY = (margemSuperior + (contador * fonte.GetHeight(e.Graphics)));
+                e.Graphics.DrawString(linha, fonte, pincel, margemEsquerda, posicaoY, new StringFormat());
+                contador += 1;
+                linha = leitura.ReadLine();
+            }
+
+            //IMPRIMIR EM OUTRA PÁGINA
+            if (linha != null)
+            {
+                e.HasMorePages = true;
+            }
+            else
+            {
+                e.HasMorePages = false;
+            }
+            pincel.Dispose();
         }
 
+        private void impressao_Click(object sender, EventArgs e)
+        {
+            Imprimir();
+        }
+        
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 

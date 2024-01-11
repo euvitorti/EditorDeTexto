@@ -35,8 +35,6 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.Abrir = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.Salvar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.Copiar = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.Colar = new System.Windows.Forms.ToolStripButton();
@@ -62,13 +60,20 @@
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.impressao = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // richTextBox1
             // 
+            this.richTextBox1.BackColor = System.Drawing.Color.White;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.Black;
+            this.richTextBox1.HideSelection = false;
             this.richTextBox1.Location = new System.Drawing.Point(172, 86);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(693, 461);
@@ -86,8 +91,6 @@
             this.toolStripSeparator1,
             this.Abrir,
             this.toolStripSeparator2,
-            this.Salvar,
-            this.toolStripSeparator3,
             this.Copiar,
             this.toolStripSeparator4,
             this.Colar,
@@ -104,12 +107,14 @@
             this.toolStripSeparator10,
             this.Esquerda,
             this.toolStripSeparator11,
-            this.Direita});
+            this.Direita,
+            this.toolStripSeparator12,
+            this.impressao});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip1.Size = new System.Drawing.Size(31, 663);
+            this.toolStrip1.Size = new System.Drawing.Size(41, 663);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -119,14 +124,14 @@
             this.Novo.Image = ((System.Drawing.Image)(resources.GetObject("Novo.Image")));
             this.Novo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Novo.Name = "Novo";
-            this.Novo.Size = new System.Drawing.Size(26, 24);
+            this.Novo.Size = new System.Drawing.Size(36, 24);
             this.Novo.Text = "btn_novo";
             this.Novo.Click += new System.EventHandler(this.Novo_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(26, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(36, 6);
             // 
             // Abrir
             // 
@@ -134,29 +139,14 @@
             this.Abrir.Image = ((System.Drawing.Image)(resources.GetObject("Abrir.Image")));
             this.Abrir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Abrir.Name = "Abrir";
-            this.Abrir.Size = new System.Drawing.Size(26, 24);
+            this.Abrir.Size = new System.Drawing.Size(36, 24);
             this.Abrir.Text = "btn_abrir";
             this.Abrir.Click += new System.EventHandler(this.Abrir_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(26, 6);
-            // 
-            // Salvar
-            // 
-            this.Salvar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.Salvar.Image = ((System.Drawing.Image)(resources.GetObject("Salvar.Image")));
-            this.Salvar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.Salvar.Name = "Salvar";
-            this.Salvar.Size = new System.Drawing.Size(26, 24);
-            this.Salvar.Text = "btn_salvar";
-            this.Salvar.Click += new System.EventHandler(this.Salvar_Click);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(26, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(36, 6);
             // 
             // Copiar
             // 
@@ -164,14 +154,14 @@
             this.Copiar.Image = ((System.Drawing.Image)(resources.GetObject("Copiar.Image")));
             this.Copiar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Copiar.Name = "Copiar";
-            this.Copiar.Size = new System.Drawing.Size(26, 24);
+            this.Copiar.Size = new System.Drawing.Size(36, 24);
             this.Copiar.Text = "btn_copiar";
             this.Copiar.Click += new System.EventHandler(this.Copiar_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(26, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(36, 6);
             // 
             // Colar
             // 
@@ -179,14 +169,14 @@
             this.Colar.Image = ((System.Drawing.Image)(resources.GetObject("Colar.Image")));
             this.Colar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Colar.Name = "Colar";
-            this.Colar.Size = new System.Drawing.Size(26, 24);
+            this.Colar.Size = new System.Drawing.Size(36, 24);
             this.Colar.Text = "btn_colar";
             this.Colar.Click += new System.EventHandler(this.Colar_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(26, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(36, 6);
             // 
             // Negrito
             // 
@@ -194,14 +184,14 @@
             this.Negrito.Image = ((System.Drawing.Image)(resources.GetObject("Negrito.Image")));
             this.Negrito.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Negrito.Name = "Negrito";
-            this.Negrito.Size = new System.Drawing.Size(26, 24);
+            this.Negrito.Size = new System.Drawing.Size(36, 24);
             this.Negrito.Text = "btn_negrito";
             this.Negrito.Click += new System.EventHandler(this.Negrito_Click);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(26, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(36, 6);
             // 
             // Italico
             // 
@@ -209,14 +199,14 @@
             this.Italico.Image = ((System.Drawing.Image)(resources.GetObject("Italico.Image")));
             this.Italico.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Italico.Name = "Italico";
-            this.Italico.Size = new System.Drawing.Size(26, 24);
+            this.Italico.Size = new System.Drawing.Size(36, 24);
             this.Italico.Text = "btn_italico";
             this.Italico.Click += new System.EventHandler(this.Italico_Click);
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(26, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(36, 6);
             // 
             // Sublinhado
             // 
@@ -224,14 +214,14 @@
             this.Sublinhado.Image = ((System.Drawing.Image)(resources.GetObject("Sublinhado.Image")));
             this.Sublinhado.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Sublinhado.Name = "Sublinhado";
-            this.Sublinhado.Size = new System.Drawing.Size(26, 24);
+            this.Sublinhado.Size = new System.Drawing.Size(36, 24);
             this.Sublinhado.Text = "btn_sublinhado";
             this.Sublinhado.Click += new System.EventHandler(this.Sublinhado_Click);
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(26, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(36, 6);
             // 
             // Justificado
             // 
@@ -239,13 +229,13 @@
             this.Justificado.Image = ((System.Drawing.Image)(resources.GetObject("Justificado.Image")));
             this.Justificado.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Justificado.Name = "Justificado";
-            this.Justificado.Size = new System.Drawing.Size(26, 24);
+            this.Justificado.Size = new System.Drawing.Size(36, 24);
             this.Justificado.Text = "btn_justificado";
             // 
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(26, 6);
+            this.toolStripSeparator9.Size = new System.Drawing.Size(36, 6);
             // 
             // Centralizado
             // 
@@ -253,14 +243,14 @@
             this.Centralizado.Image = ((System.Drawing.Image)(resources.GetObject("Centralizado.Image")));
             this.Centralizado.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Centralizado.Name = "Centralizado";
-            this.Centralizado.Size = new System.Drawing.Size(26, 24);
+            this.Centralizado.Size = new System.Drawing.Size(36, 24);
             this.Centralizado.Text = "btn_centralizado";
             this.Centralizado.Click += new System.EventHandler(this.Centralizado_Click);
             // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(26, 6);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(36, 6);
             // 
             // Esquerda
             // 
@@ -268,14 +258,14 @@
             this.Esquerda.Image = ((System.Drawing.Image)(resources.GetObject("Esquerda.Image")));
             this.Esquerda.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Esquerda.Name = "Esquerda";
-            this.Esquerda.Size = new System.Drawing.Size(26, 24);
+            this.Esquerda.Size = new System.Drawing.Size(36, 24);
             this.Esquerda.Text = "btn_esquerda";
             this.Esquerda.Click += new System.EventHandler(this.Esquerda_Click);
             // 
             // toolStripSeparator11
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(26, 6);
+            this.toolStripSeparator11.Size = new System.Drawing.Size(36, 6);
             // 
             // Direita
             // 
@@ -283,7 +273,7 @@
             this.Direita.Image = ((System.Drawing.Image)(resources.GetObject("Direita.Image")));
             this.Direita.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Direita.Name = "Direita";
-            this.Direita.Size = new System.Drawing.Size(26, 24);
+            this.Direita.Size = new System.Drawing.Size(36, 24);
             this.Direita.Text = "btn_direita";
             this.Direita.Click += new System.EventHandler(this.Direita_Click);
             // 
@@ -307,6 +297,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Salvar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // openFileDialog1
             // 
@@ -327,21 +318,40 @@
             // 
             // panel2
             // 
+            this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Location = new System.Drawing.Point(33, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1003, 556);
             this.panel2.TabIndex = 4;
+            // 
+            // impressao
+            // 
+            this.impressao.BackColor = System.Drawing.Color.White;
+            this.impressao.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.impressao.Image = ((System.Drawing.Image)(resources.GetObject("impressao.Image")));
+            this.impressao.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.impressao.Name = "impressao";
+            this.impressao.Size = new System.Drawing.Size(36, 24);
+            this.impressao.Text = "Impressao";
+            this.impressao.Click += new System.EventHandler(this.impressao_Click);
+            // 
+            // toolStripSeparator12
+            // 
+            this.toolStripSeparator12.Name = "toolStripSeparator12";
+            this.toolStripSeparator12.Size = new System.Drawing.Size(36, 6);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1048, 663);
-            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -361,7 +371,6 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton Novo;
         private System.Windows.Forms.ToolStripButton Abrir;
-        private System.Windows.Forms.ToolStripButton Salvar;
         private System.Windows.Forms.ToolStripButton Copiar;
         private System.Windows.Forms.ToolStripButton Colar;
         private System.Windows.Forms.ToolStripButton Negrito;
@@ -373,7 +382,6 @@
         private System.Windows.Forms.ToolStripButton Centralizado;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
@@ -390,6 +398,9 @@
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
+        private System.Windows.Forms.ToolStripButton impressao;
     }
 }
 
